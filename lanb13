@@ -1,0 +1,26 @@
+#include <iostream>
+#include <tchar.h>
+using namespace std;
+#pragma hdrstop
+
+double Procent(double c, double proc)
+{
+	return c / proc * 100;
+}
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	double c, proc, s;
+	cout << "Введите c:    ";   
+	cin >> c;
+	cout << "Введите proc: ";    
+	cin >> proc;
+	s = Procent(c, proc);
+
+	cout << s << endl;
+
+	cout << endl;
+	system("pause");
+	return 0;
+}
